@@ -2399,3 +2399,9 @@ body {
   display: flex;
   align-self: center;
 }
+
+@media only screen and (max-width: 600px) {
+  #headings h1 {
+    font-size: 1.5rem;
+  }
+}
