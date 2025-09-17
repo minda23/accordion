@@ -1,0 +1,26 @@
+{
+  "name": "accordion-alpine",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minda23/accordion.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minda23/accordion/issues"
+  },
+  "homepage": "https://github.com/minda23/accordion#readme",
+  "description": "",
+  "devDependencies": {
+    "gulp": "^5.0.1"
+  },
+  "dependencies": {
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.92.1"
+  }
+}
