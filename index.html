@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css" />
   <script type="text/javascript"></script>
+  <script src="js/script.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.0/dist/cdn.min.js"></script>
 </head>
 <body>
@@ -15,36 +16,41 @@
 
   <div id="main-content">
 
-    <div class="accordion__item" x-data="{ open: false }">
-      <div class="accordion__header" x-on:click="open = ! open">
+    <div class="accordion__item">
+      <div class="accordion__header">
         <p class="accordion__heading">Is there a free trial available?</p>
           <div class="accordion__icons">
-            <template x-if="open">
-                <img class="accordion__open" src="./img/close-accordion.svg" alt="open accordion" />
-            </template>
-            <template x-if="!open">
-                <img class="accordion__close" src="./img/open-accordion.svg" alt="open accordion" />
-            </template>
+                <img class="accordion__open"src="./img/open-accordion.svg" alt="open accordion" />
+                <img class="accordion__close"  style="display:none;" src="./img/close-accordion.svg" alt="open accordion" />
           </div>
       </div>
-      <div class="accordion__text" x-show="open" x-transition.duration.500ms>
+      <div class="accordion__text">
         <p>No. You can, however, get a free report that tells you exactly how many and what kinds of mistakes there are in your document.</p>
       </div>
     </div>
 
-    <div class="accordion__item" x-data="{ open: false }">
-      <div class="accordion__header" x-on:click="open = ! open">
+    <div class="accordion__item">
+      <div class="accordion__header">
+        <p class="accordion__heading">Is there a free trial available?</p>
+          <div class="accordion__icons">
+                <img class="accordion__open" src="./img/open-accordion.svg" alt="open accordion" />
+                <img class="accordion__close" style="display:none;" src="./img/close-accordion.svg" alt="open accordion" />
+          </div>
+      </div>
+      <div class="accordion__text">
+        <p>No. You can, however, get a free report that tells you exactly how many and what kinds of mistakes there are in your document.</p>
+      </div>
+    </div>
+
+    <div class="accordion__item">
+      <div class="accordion__header">
         <p class="accordion__heading">Can I change my plan later?</p>
         <div class="accordion__icons">
-          <template x-if="open">
-              <img class="accordion__open" src="./img/close-accordion.svg" alt="open accordion" />
-          </template>
-          <template x-if="!open">
-              <img class="accordion__close" src="./img/open-accordion.svg" alt="open accordion" />
-          </template>
+              <img class="accordion__open" src="./img/open-accordion.svg" alt="open accordion" />
+              <img class="accordion__close" style="display:none;" src="./img/close-accordion.svg" alt="open accordion" />
         </div>
       </div>
-      <div class="accordion__text" x-show="open" x-transition.duration.500ms>
+      <div class="accordion__text">
         <p>Yes, in most cases, you can change your plan later, though the process and effect vary by provider, with some changes being immediate and others taking effect at your next billing cycle.</p>
       </div>
     </div>
@@ -53,11 +59,11 @@
       <div class="accordion__header" x-on:click="open = ! open">
         <p class="accordion__heading">What is your cancellation policy?</p>
         <div class="accordion__icons">
-          <template x-if="open">
-              <img class="accordion__open" src="./img/close-accordion.svg" alt="open accordion" />
-          </template>
           <template x-if="!open">
               <img class="accordion__close" src="./img/open-accordion.svg" alt="open accordion" />
+          </template>  
+          <template x-if="open">
+              <img class="accordion__open" src="./img/close-accordion.svg" alt="open accordion" />
           </template>
         </div>
       </div>
@@ -71,11 +77,11 @@
       <div class="accordion__header" x-on:click="open = ! open">
         <p class="accordion__heading">Can other info be added to info policy?</p>
         <div class="accordion__icons">
-          <template x-if="open">
-              <img class="accordion__open" src="./img/close-accordion.svg" alt="open accordion" />
-          </template>
           <template x-if="!open">
               <img class="accordion__close" src="./img/open-accordion.svg" alt="open accordion" />
+          </template>
+             <template x-if="open">
+              <img class="accordion__open" src="./img/close-accordion.svg" alt="open accordion" />
           </template>
         </div>
       </div>
@@ -89,11 +95,11 @@
       <div class="accordion__header" x-on:click="open = ! open">
         <p class="accordion__heading">How does billing work?</p>
         <div class="accordion__icons">
+             <template x-if="!open">
+              <img class="accordion__close" src="./img/open-accordion.svg" alt="open accordion" />
+          </template>
           <template x-if="open">
               <img class="accordion__open" src="./img/close-accordion.svg" alt="open accordion" />
-          </template>
-          <template x-if="!open">
-              <img class="accordion__close" src="./img/open-accordion.svg" alt="open accordion" />
           </template>
         </div>
       </div>
