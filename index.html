@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Selectors and Filters</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/tokens.css">
+  <link rel="stylesheet" href="./css/style.css" />
+  <script type="text/javascript"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.0/dist/cdn.min.js"></script>
+</head>
+<body>
+  <div id="headings">
+    <h1 class="accordion__title">Frequently Asked Questions</h1>
+    <p class="accordion__subTitle">Everything you need to know about the product and billing</p>
+  </div>
+
+  <div id="main-content">
+
+    <div class="accordion__item" x-data="{ open: false }">
+      <div class="accordion__header" x-on:click="open = ! open">
+        <p class="accordion__heading">Is there a free trial available?</p>
+        <div class="accordion__icons">
+          <img class="accordion__open" src="./img/open-accordion.svg" alt="open accordion" />
+          <img class="accordion__close" src="./img/close-accordion.svg" alt="close accordion" />
+        </div>
+      </div>
+      <div class="accordion__text" x-show="open" x-transition.duration.500ms>
+        <p>No. You can, however, get a free report that tells you exactly how many and what kinds of mistakes there are in your document.</p>
+      </div>
+    </div>
+
+    <div class="accordion__item" x-data="{ open: false }">
+      <div class="accordion__header" x-on:click="open = ! open">
+        <p class="accordion__heading">Can I change my plan later?</p>
+        <div class="accordion__icons">
+          <img class="accordion__open" src="./img/open-accordion.svg" alt="open accordion" />
+          <img class="accordion__close" src="./img/close-accordion.svg" alt="close accordion" />
+        </div>
+      </div>
+      <div class="accordion__text" x-show="open" x-transition.duration.500ms>
+        <p>Yes, in most cases, you can change your plan later, though the process and effect vary by provider, with some changes being immediate and others taking effect at your next billing cycle.</p>
+      </div>
+    </div>
+
+    <div class="accordion__item" x-data="{ open: false }">
+      <div class="accordion__header" x-on:click="open = ! open">
+        <p class="accordion__heading">What is your cancellation policy?</p>
+        <div class="accordion__icons">
+          <img class="accordion__open" src="./img/open-accordion.svg" alt="open accordion" />
+          <img class="accordion__close" src="./img/close-accordion.svg" alt="close accordion" />
+        </div>
+      </div>
+      <div class="accordion__text" x-show="open" x-transition.duration.500ms>
+        <p>We’re strict. Having said that, we actually do try to work with guests. Just how many people really have sudden deaths in the family and cars breaking down right before their trips and all manners of reasons? Anyway, we let the charges go through, minus cleaning fees, 
+          and offer the option for rebooking during our slow season. Seems generally to be a pain in the neck but a viable adjustment.</p>
+      </div>
+    </div>
+
+    <div class="accordion__item" x-data="{ open: false }">
+      <div class="accordion__header" x-on:click="open = ! open">
+        <p class="accordion__heading">Can other info be added to info policy?</p>
+        <div class="accordion__icons">
+          <img class="accordion__open" src="./img/open-accordion.svg" alt="open accordion" /> 
+          <img class="accordion__close" src="./img/close-accordion.svg" alt="close accordion" />
+        </div>
+      </div>
+      <div class="accordion__text" x-show="open" x-transition.duration.500ms>
+        <p>Yes. The information policy is a living document and may be updated to include new requirements, clarifications, or additional details as needed.
+           Any changes will be reviewed and communicated to ensure consistency and transparency.</p>
+      </div>
+    </div>
+
+    <div class="accordion__item" x-data="{ open: false }">
+      <div class="accordion__header" x-on:click="open = ! open">
+        <p class="accordion__heading">How does billing work?</p>
+        <div class="accordion__icons">
+          <img class="accordion__open" src="./img/open-accordion.svg" alt="open accordion" />
+          <img class="accordion__close" src="./img/close-accordion.svg" alt="close accordion" />
+        </div>
+      </div>
+      <div class="accordion__text" x-show="open" x-transition.duration.500ms>
+        <p>Billing is processed on a recurring basis according to the plan or services selected. Invoices are issued before each billing cycle,
+           and payment methods on file are automatically charged unless otherwise arranged.</p>
+      </div>
+    </div>
+
+    <div class="accordion__item" x-data="{ open: false }">
+      <div class="accordion__header" x-on:click="open = ! open">
+        <p class="accordion__heading">How do I change my account email?</p>
+        <div class="accordion__icons">
+          <img class="accordion__open" src="./img/open-accordion.svg" alt="open accordion" />
+          <img class="accordion__close" src="./img/close-accordion.svg" alt="close accordion" />
+        </div>
+      </div>
+      <div class="accordion__text" x-show="open" x-transition.duration.500ms>
+        <p>You can update your account email in the account settings section. Go to Profile or Account Settings, 
+          select Edit Email, and enter your new address.
+           A confirmation link will be sent to the new email to verify the change. Once confirmed, your account will be updated.</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

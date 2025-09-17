@@ -1,0 +1,80 @@
+@use 'tokens';
+
+body{
+    background-color: var(  --colors-brand-800);
+    font-family:  var(  --text-sm-semibold-underlined-font-family);
+}
+
+#headings{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(  --colors-base-white);
+}
+.accordion__subTitle{
+    font-size: var(--text-lg-regular-font-size);
+    
+}
+
+#main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 42rem;
+}
+
+.accordion__heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: var(--text-md-medium-underlined-font-size);
+  color: var(  --colors-base-white);
+  border: none;
+  margin-top:1rem;
+
+
+}
+
+.accordion__item{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--colors-brand-400);
+    width: 100%;
+}
+
+.accordion__heading,
+.accordion__text p {
+  margin: 0.5rem;
+}
+
+.accordion__header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+
+.accordion__text{
+  display: flex;
+  width: 100%;
+  color:var(  --colors-brand-200);
+  margin-bottom: 1rem;
+  font-size: var( --text-sm-medium-font-size);
+  
+}
+
+.accordion__text p {
+   max-width: 37rem;
+ 
+}
+
+.accordion__icons{
+    display: flex;
+    align-self: center;
+    
+}
+
+
+
